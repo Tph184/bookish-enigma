@@ -19,7 +19,8 @@ def backtrack(path, state):
         if is_valid(choice, state):
             apply_choice(choice, path, state)
             backtrack(path, state)
-            undo_choice(choice, path, state)```
+            undo_choice(choice, path, state)
+```
 ## Common Backtracking Problems
 	1. Permutation
 	**Problem**: Generate all permutations of [1, 2, 3].
@@ -37,7 +38,8 @@ def permute(nums):
 				path.pop()
 	res = []
 	backtrack([])
-	return res```
+	return res
+```
 ## Conclusion
 Backtracking is ideal for combinatorial problems (permutations, subsets) and constraint satisfaction (N-Queens). Always:
 
