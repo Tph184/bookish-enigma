@@ -24,20 +24,20 @@ def backtrack(path, state):
 	1. Permutation
 	**Problem**: Generate all permutations of [1, 2, 3].
 	**Solution**:
-	```python
-	def permute(nums):
-		def backtrack(path):
-			if len(path) == len(nums):
-				res.append(path.copy())
-				return
-			for num in nums:
-				if num not in path:
-					path.append(num)
-					backtrack(path)
-					path.pop()
-		res = []
-		backtrack([])
-		return res```
+```python
+def permute(nums):
+	def backtrack(path):
+		if len(path) == len(nums):
+			res.append(path.copy())
+			return
+		for num in nums:
+			if num not in path:
+				path.append(num)
+				backtrack(path)
+				path.pop()
+	res = []
+	backtrack([])
+	return res```
 ## Conclusion
 Backtracking is ideal for combinatorial problems (permutations, subsets) and constraint satisfaction (N-Queens). Always:
 
