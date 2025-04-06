@@ -22,7 +22,7 @@ def backtrack(path, state):
             undo_choice(choice, path, state)
 ```
 ## Common Backtracking Problems
-	1. Permutation
+1. Permutation
 	**Problem**: Generate all permutations of [1, 2, 3].
 	**Solution**:
 ```python
